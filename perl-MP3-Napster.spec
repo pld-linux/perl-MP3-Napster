@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MP3
 %define	pnam	Napster
-Summary:	MP3-Napster perl module
-Summary(pl):	Modu³ perla MP3-Napster
+Summary:	MP3::Napster perl module
+Summary(pl):	Modu³ perla MP3::Napster
 Name:		perl-MP3-Napster
 Version:	2.04
 Release:	6
@@ -17,14 +17,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is MP3-Napster, a pure-Perl interface to the Napster MP3 file
+This is MP3::Napster, a pure-Perl interface to the Napster MP3 file
 search and distribution servers (www.napster.com). With this module,
 you can connect to Napster servers, participate in online chat
 channels, search the Napster virtual library of MP3 sound files, and
 exchanged selected MP3s with other users.
 
 %description -l pl
-To jest MP3-Napster, interfejs do serwerów wyszukiwania i dystrubucji
+To jest MP3::Napster, interfejs do serwerów wyszukiwania i dystrubucji
 plików MP3 - Napstera (www.napster.com), napisany w czystym Perlu. Z
 tym modu³em mo¿esz pod³±czyæ siê do serwerów Napstera, zostaæ
 uczestnikiem kana³ów pogawêdkowych, przeszukiwaæ wirtualn± bibliotekê
