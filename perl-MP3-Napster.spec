@@ -5,11 +5,11 @@ Summary:	MP3::Napster perl module
 Summary(pl):	Modu³ perla MP3::Napster
 Name:		perl-MP3-Napster
 Version:	2.04
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MP3-Info
@@ -34,7 +34,8 @@ plików MP3 Napstera, i wymieniaæ wybrane pliki z innymi u¿ytkownikami.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
@@ -50,9 +51,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/MP3/Napster.pm
-%{perl_sitelib}/MP3/Napster
-%{perl_sitelib}/MP3/TkNapster
+%{perl_vendorlib}/MP3/Napster.pm
+%{perl_vendorlib}/MP3/Napster
+%{perl_vendorlib}/MP3/TkNapster
 %{_mandir}/man3/*
 %{_mandir}/man1/*
 %attr(755,root,root) %{_bindir}/*
