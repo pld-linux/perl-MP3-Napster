@@ -6,8 +6,14 @@ Version:	2.04
 Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
+Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
 Group(de):	Entwicklung/Sprachen/Perl
+Group(es):	Desarrollo/Lenguajes/Perl
+Group(fr):	Development/Langues/Perl
+Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
+Group(pt):	Desenvolvimento/Linguagens/Perl
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/MP3/MP3-Napster-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
@@ -18,15 +24,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is MP3-Napster, a pure-Perl interface to the Napster MP3 file
-search and distribution servers (www.napster.com).  With this module,
+search and distribution servers (www.napster.com). With this module,
 you can connect to Napster servers, participate in online chat
 channels, search the Napster virtual library of MP3 sound files, and
 exchanged selected MP3s with other users.
 
 %description -l pl
 To jest MP3-Napster, interfejs do serwerów wyszukiwania i dystrubucji
-plików MP3 - Napstera (www.napster.com), napisany w czystym Perlu.
-Z tym modu³em mo¿esz pod³±czyæ siê do serwerów Napstera, zostaæ
+plików MP3 - Napstera (www.napster.com), napisany w czystym Perlu. Z
+tym modu³em mo¿esz pod³±czyæ siê do serwerów Napstera, zostaæ
 uczestnikiem kana³ów pogawêdkowych, przeszukiwaæ wirtualn± bibliotekê
 plików MP3 Napstera, i wymieniaæ wybrane pliki z innymi u¿ytkownikami.
 
