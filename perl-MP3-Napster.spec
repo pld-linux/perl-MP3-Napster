@@ -3,7 +3,7 @@ Summary:	MP3-Napster perl module
 Summary(pl):	Modu³ perla MP3-Napster
 Name:		perl-MP3-Napster
 Version:	2.04
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
