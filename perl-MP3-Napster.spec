@@ -39,20 +39,22 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-gzip -9nf README
+install eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz eg
+%doc README
 %{perl_sitelib}/MP3/Napster.pm
 %{perl_sitelib}/MP3/Napster
 %{perl_sitelib}/MP3/TkNapster
 %{_mandir}/man3/*
 %{_mandir}/man1/*
 %attr(755,root,root) %{_bindir}/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
