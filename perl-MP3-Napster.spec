@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	MP3
 %define	pnam	Napster
-%include	/usr/lib/rpm/macros.perl
 Summary:	MP3-Napster perl module
 Summary(pl):	Modu³ perla MP3-Napster
 Name:		perl-MP3-Napster
 Version:	2.04
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -32,7 +31,7 @@ uczestnikiem kana³ów pogawêdkowych, przeszukiwaæ wirtualn± bibliotekê
 plików MP3 Napstera, i wymieniaæ wybrane pliki z innymi u¿ytkownikami.
 
 %prep
-%setup -q -n MP3-Napster-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
