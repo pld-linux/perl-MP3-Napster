@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MP3
 %define	pnam	Napster
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla MP3::Napster
 Name:		perl-MP3-Napster
 Version:	2.04
 Release:	7
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b3e253997909882b09013f6557aadc48
@@ -38,6 +43,8 @@ plików MP3 Napstera, i wymieniaæ wybrane pliki z innymi u¿ytkownikami.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
