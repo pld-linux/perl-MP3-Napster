@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MP3
 %define	pnam	Napster
-Summary:	MP3::Napster perl module
-Summary(pl):	Modu³ perla MP3::Napster
+Summary:	MP3::Napster Perl module - interface to the Napster MP3 search and distribution servers
+Summary(pl):	Modu³ Perla MP3::Napster - interfejs do serwerów wyszukiwania i dystrubucji plików MP3 Napstera
 Name:		perl-MP3-Napster
 Version:	2.04
 Release:	8
@@ -50,7 +50,7 @@ plików MP3 Napstera, i wymieniaæ wybrane pliki z innymi u¿ytkownikami.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install 
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 install eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
