@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MP3
-%define	pnam	Napster
+%define		pdir	MP3
+%define		pnam	Napster
 Summary:	MP3::Napster Perl module - interface to the Napster MP3 search and distribution servers
 Summary(pl):	Modu³ Perla MP3::Napster - interfejs do serwerów wyszukiwania i dystrubucji plików MP3 Napstera
 Name:		perl-MP3-Napster
