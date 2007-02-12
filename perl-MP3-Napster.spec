@@ -6,7 +6,7 @@
 %define		pdir	MP3
 %define		pnam	Napster
 Summary:	MP3::Napster Perl module - interface to the Napster MP3 search and distribution servers
-Summary(pl):	Modu³ Perla MP3::Napster - interfejs do serwerów wyszukiwania i dystrubucji plików MP3 Napstera
+Summary(pl.UTF-8):   ModuÅ‚ Perla MP3::Napster - interfejs do serwerÃ³w wyszukiwania i dystrubucji plikÃ³w MP3 Napstera
 Name:		perl-MP3-Napster
 Version:	2.04
 Release:	8
@@ -29,12 +29,12 @@ you can connect to Napster servers, participate in online chat
 channels, search the Napster virtual library of MP3 sound files, and
 exchanged selected MP3s with other users.
 
-%description -l pl
-To jest MP3::Napster, interfejs do serwerów wyszukiwania i dystrubucji
-plików MP3 - Napstera (www.napster.com), napisany w czystym Perlu. Z
-tym modu³em mo¿esz pod³±czyæ siê do serwerów Napstera, zostaæ
-uczestnikiem kana³ów pogawêdkowych, przeszukiwaæ wirtualn± bibliotekê
-plików MP3 Napstera, i wymieniaæ wybrane pliki z innymi u¿ytkownikami.
+%description -l pl.UTF-8
+To jest MP3::Napster, interfejs do serwerÃ³w wyszukiwania i dystrubucji
+plikÃ³w MP3 - Napstera (www.napster.com), napisany w czystym Perlu. Z
+tym moduÅ‚em moÅ¼esz podÅ‚Ä…czyÄ‡ siÄ™ do serwerÃ³w Napstera, zostaÄ‡
+uczestnikiem kanaÅ‚Ã³w pogawÄ™dkowych, przeszukiwaÄ‡ wirtualnÄ… bibliotekÄ™
+plikÃ³w MP3 Napstera, i wymieniaÄ‡ wybrane pliki z innymi uÅ¼ytkownikami.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
