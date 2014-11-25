@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	MP3
 %define		pnam	Napster
+%include	/usr/lib/rpm/macros.perl
 Summary:	MP3::Napster Perl module - interface to the Napster MP3 search and distribution servers
 Summary(pl.UTF-8):	Moduł Perla MP3::Napster - interfejs do serwerów wyszukiwania i dystrubucji plików MP3 Napstera
 Name:		perl-MP3-Napster
@@ -15,10 +15,11 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b3e253997909882b09013f6557aadc48
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/MP3-Napster/
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MP3-Info
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,7 +53,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
