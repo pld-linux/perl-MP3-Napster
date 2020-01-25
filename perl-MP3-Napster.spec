@@ -4,7 +4,6 @@
 
 %define		pdir	MP3
 %define		pnam	Napster
-%include	/usr/lib/rpm/macros.perl
 Summary:	MP3::Napster Perl module - interface to the Napster MP3 search and distribution servers
 Summary(pl.UTF-8):	Moduł Perla MP3::Napster - interfejs do serwerów wyszukiwania i dystrubucji plików MP3 Napstera
 Name:		perl-MP3-Napster
