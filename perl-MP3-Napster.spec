@@ -8,7 +8,7 @@ Summary:	MP3::Napster Perl module - interface to the Napster MP3 search and dist
 Summary(pl.UTF-8):	Moduł Perla MP3::Napster - interfejs do serwerów wyszukiwania i dystrubucji plików MP3 Napstera
 Name:		perl-MP3-Napster
 Version:	2.04
-Release:	9
+Release:	10
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
